@@ -1,0 +1,239 @@
+._8sid .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 70px;
+    border-bottom: 2px solid violet;
+}
+
+._8sid .navigation .logo-container {
+    position: relative;
+}
+
+._8sid .navigation .logo-container span {
+    position: absolute;
+    top: 15px;
+    right: -40px;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #8861de;
+}
+
+._8sid .navigation .logo-container img {
+    width: 50px;
+}
+
+._8sid .navigation .tones-seas {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+._8sid .navigation .tones-seas .beery-lime button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 100px;
+    font-size: 14px;
+    color: white;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+._8sid .navigation .hosts-vast {
+    position: relative;
+}
+
+._8sid .navigation .hosts-vast > div {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 37px;
+    height: 100%;
+}
+
+._8sid .navigation .hosts-vast svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+._8sid .navigation .hosts-vast input {
+    height: 36px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 42px;
+}
+
+._8sid .navigation .chigetai-pop {
+    position: relative;
+}
+
+._8sid .navigation .chigetai-pop svg {
+    width: 30px;
+    height: 30px;
+    fill: grey;
+    transform: translateY(5px);
+}
+
+._8sid .navigation .chigetai-pop span {
+    position: absolute;
+    top: -7px;
+    right: 9px;
+    color: grey;
+    font-weight: 600;
+}
+
+._8sid .navigation .enfeoff-ion {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    background-color: violet;
+    padding: 8px 10px 8px 16px;
+    cursor: pointer;
+}
+
+._8sid .navigation .enfeoff-ion span {
+    font-size: 14px;
+    color: white;
+}
+
+._8sid .navigation .enfeoff-ion svg {
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+._8sid .container .caract-tags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    background-color: rgb(235, 235, 235);
+    padding-left: 30px;
+}
+
+._8sid .container .caract-tags span {
+    color: rgb(45, 45, 45);
+    border-bottom: 3px solid transparent;
+}
+
+._8sid .container .caract-tags span:not(:first-of-type) {
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+._8sid .container .caract-tags span.active {
+    color: violet;
+    border-bottom: 3px solid violet;
+}
+
+._8sid .container .caract-tags .postburn-aun {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+._8sid .container .extracts-oven {
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+._8sid .container .pagination {
+    width: 760px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+._8sid .container .straiter-seat {
+    display: flex;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs {
+    position: relative;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs span {
+    position: absolute;
+    top: 20px;
+    right: -93px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs.zero span {
+    right: -64px;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs.micro span {
+    right: -76px;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs.mini span {
+    right: -87px;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs.mega span {
+    right: -98px;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs > img {
+    position: absolute;
+    top: 18px;
+    right: -25px;
+    width: 18px;
+}
+
+._8sid .container .straiter-seat .suets-pups button {
+    all: unset;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(203, 102, 203);
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    ._8sid .navigation .hosts-vast,
+    ._8sid .navigation .beery-lime {
+        display: none;
+    }
+
+    ._8sid .container .straiter-seat {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ._8sid .container .pagination {
+        width: auto;
+    }
+
+    ._8sid .container .straiter-seat .pinesap-fohs {
+        margin-left: 30px;
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+}

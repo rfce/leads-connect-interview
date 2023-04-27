@@ -1,0 +1,248 @@
+._9rch .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 70px;
+    border-bottom: 2px solid violet;
+}
+
+._9rch .navigation .logo-container {
+    position: relative;
+}
+
+._9rch .navigation .logo-container span {
+    position: absolute;
+    top: 15px;
+    right: -40px;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    color: #8861de;
+}
+
+._9rch .navigation .logo-container img {
+    width: 50px;
+}
+
+._9rch .navigation .tones-seas {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+._9rch .navigation .tones-seas .beery-lime button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 100px;
+    font-size: 14px;
+    color: white;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+._9rch .navigation .hosts-vast {
+    position: relative;
+}
+
+._9rch .navigation .hosts-vast > div {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 37px;
+    height: 100%;
+}
+
+._9rch .navigation .hosts-vast svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+._9rch .navigation .hosts-vast input {
+    height: 36px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 42px;
+}
+
+._9rch .navigation .chigetai-pop {
+    position: relative;
+}
+
+._9rch .navigation .chigetai-pop svg {
+    width: 30px;
+    height: 30px;
+    fill: grey;
+    transform: translateY(5px);
+}
+
+._9rch .navigation .chigetai-pop span {
+    position: absolute;
+    top: -7px;
+    right: 9px;
+    color: grey;
+    font-weight: 600;
+}
+
+._9rch .navigation .enfeoff-ion {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    background-color: violet;
+    padding: 8px 10px 8px 16px;
+    cursor: pointer;
+}
+
+._9rch .navigation .enfeoff-ion span {
+    font-size: 14px;
+    color: white;
+}
+
+._9rch .navigation .enfeoff-ion svg {
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+._9rch .container {
+    display: flex;
+}
+
+._9rch .container .pinesap-fohs {
+    position: relative;
+    margin-top: 40px;
+}
+
+._9rch .container .pinesap-fohs button {
+    all: unset;
+    color: white;
+    background-color: rgba(56, 142, 60, 0.625);
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+
+._9rch .container .pinesap-fohs h4 {
+    font-size: 18px;
+    font-weight: 400;
+    transform: translateY(20px);
+}
+
+._9rch .container .pinesap-fohs span {
+    position: absolute;
+    top: 20px;
+    right: -93px;
+    font-size: 20px;
+    font-weight: 600;
+    transform: translateX(-40px);
+}
+
+._9rch .container .pinesap-fohs.zero span {
+    right: -64px;
+}
+
+._9rch .container .pinesap-fohs.micro span {
+    right: -76px;
+}
+
+._9rch .container .pinesap-fohs.mini span {
+    right: -87px;
+}
+
+._9rch .container .pinesap-fohs.mega span {
+    right: -98px;
+}
+
+._9rch .container .pinesap-fohs > img {
+    position: absolute;
+    top: 18px;
+    right: -25px;
+    width: 18px;
+    transform: translateX(-40px);
+}
+
+._9rch .container .rankest-duet {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: grey;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+._9rch .container .rankest-duet svg {
+    width: 17px;
+    height: 17px;
+    fill: grey;
+}
+
+@media only screen and (max-width: 600px) {
+    ._9rch .navigation .hosts-vast,
+    ._9rch .navigation .beery-lime {
+        display: none;
+    }
+
+    ._9rch .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    ._9rch .container .product-box {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    ._9rch .container .product-box .product-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    ._9rch .container .product-box .product-details > div:first-of-type {
+        padding-left: 0px;
+    }
+
+    ._9rch .container .product-box .product-details > div h2 {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    ._9rch .container .product-box .fermatas-voe {
+        padding-left: 0px;
+    }
+
+    ._9rch .container .product-box .fermatas-voe .critique-net {
+        display: flex;
+    }
+
+    ._9rch .container .product-box .fermatas-voe > button:first-of-type {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    ._9rch .container .pinesap-fohs {
+        width: fit-content;
+        margin-top: -20px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+}
+
