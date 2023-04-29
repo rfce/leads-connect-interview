@@ -5,7 +5,7 @@ import { CgShoppingCart } from "react-icons/cg"
 import { useState, useContext, useEffect } from "react"
 import { CartContext } from "../App"
 
-const ProductBox = ({ item }) => {
+const ProductBox = ({ item, setNotification }) => {
     const [quantity, setQuantity] = useState(1)
     const [hasExpandButton, setHasExpandButton] = useState(false)
     const [descriptionMin, setDescriptionMin] = useState(true)
@@ -61,6 +61,7 @@ const ProductBox = ({ item }) => {
                         <input type="number" value={quantity} onChange={e => setQuantity(Number(e.target.value))} min="1" max="10" />
                     </div>
                     <button onClick={() => actions.setCart(prev => {
+                        setNotification(`${item.title} added to cart`)
                         const index = prev.findIndex(element => element.id === item.id)
                         const copy = [...prev]
                         if (index === -1) {

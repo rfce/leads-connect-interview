@@ -6,6 +6,7 @@ import { MdChevronLeft } from "react-icons/md"
 import { CartContext } from "../App"
 import Logo from "../assets/Logo.jpg"
 import RupeeIcon from "../assets/Rupee.png"
+import EmptyCart from "../assets/EmptyCart.png"
 import CartItem from "../components/CartItem"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
@@ -13,6 +14,7 @@ import { useNavigate } from "react-router-dom"
 const Cart = () => {
     const [products, setProducts] = useState([])
     const [searchProduct, setSearchProduct] = useState("")
+    const [notification, setNotification] = useState(false)
     
     const navigate = useNavigate()
 
@@ -27,6 +29,14 @@ const Cart = () => {
 
         init()
     }, [])
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setNotification(false)
+        }, 2000)
+
+        return () => clearTimeout(timer)
+    }, [notification])
 
     const padding = (price) => {
         if (price.length === 4) {
@@ -46,6 +56,13 @@ const Cart = () => {
 
     return (
         <div className="_9rch">
+            {notification ? (
+                <div className="notification">
+                    <div className="behold-sun">
+                        {notification}
+                    </div>
+                </div>
+            ) : undefined}
             <div className="navigation">
                 <div className="logo-container">
                     <img src={Logo} alt="" />
@@ -77,9 +94,15 @@ const Cart = () => {
                         <MdChevronLeft />
                         <span>Go to homepage</span>
                     </div>
-                    {state.cart.map((item, index) => {
-                        return <CartItem key={index} item={item} products={products} />
-                    })}
+                    <div className="visuals-urns">
+                        {state.cart.length > 0 ? state.cart.map((item, index) => {
+                            return <CartItem key={index} item={item} products={products} setNotification={setNotification} />
+                        }) : (
+                            <div className="byroad-clog">
+                                <img src={EmptyCart} alt="" />
+                            </div>
+                        )}
+                    </div>
                 </div>
                 <div>
                     <div className={padding(String(state.totalCost))}>

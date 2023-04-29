@@ -1,3 +1,19 @@
+._8sid .notification {
+    position: fixed;
+    top: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+._8sid .notification .behold-sun {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
 ._8sid .navigation {
     display: flex;
     justify-content: space-between;
@@ -5,7 +21,6 @@
     padding-left: 30px;
     padding-right: 30px;
     height: 70px;
-    border-bottom: 2px solid violet;
 }
 
 ._8sid .navigation .logo-container {
@@ -84,7 +99,7 @@
 ._8sid .navigation .chigetai-pop svg {
     width: 30px;
     height: 30px;
-    fill: grey;
+    fill: rgb(176, 102, 176);
     transform: translateY(5px);
 }
 
@@ -92,7 +107,7 @@
     position: absolute;
     top: -7px;
     right: 9px;
-    color: grey;
+    color: rgb(176, 102, 176);
     font-weight: 600;
 }
 
@@ -116,6 +131,10 @@
     fill: white;
     width: 20px;
     height: 20px;
+}
+
+._8sid .container {
+    background-color: rgb(245, 245, 245);
 }
 
 ._8sid .container .caract-tags {
@@ -155,8 +174,7 @@
 }
 
 ._8sid .container .pagination {
-    width: 760px;
-    height: 50px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,45 +182,147 @@
 
 ._8sid .container .straiter-seat {
     display: flex;
+    gap: 15px;
+}
+
+._8sid .container .straiter-seat .bankcard-rax {
+    flex: 3;
+    background-color: white;
+}
+
+._8sid .container .straiter-seat .filters {
+    flex: 1;
+    width: 250px;
+    background-color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+._8sid .container .straiter-seat .filters .aardwolf-cut {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+._8sid .container .straiter-seat .filters .gruffy-qat {
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 5px;
+}
+
+._8sid .container .straiter-seat .filters .gruffy-qat.active {
+    background-color: rgb(176, 102, 176);
+    border-color: rgb(176, 102, 176);
+}
+
+._8sid .container .straiter-seat .filters .gruffy-qat svg {
+    fill: white;
+}
+
+._8sid .container .straiter-seat .filters .teabag-zee {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 40px;
+    color: white;
+    background-color: rgb(176, 102, 176);
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+}
+
+._8sid .container .straiter-seat .filters .unusual-out {
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+._8sid .container .straiter-seat .filters .unusual-out > span {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+._8sid .container .straiter-seat .filters .unusual-out > div {
+    margin-top: 15px;
+}
+
+._8sid .container .straiter-seat .filters .grief-seas {
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+._8sid .container .straiter-seat .filters .grief-seas > span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+._8sid .container .straiter-seat .filters .grief-seas > div {
+    margin-top: 15px;
 }
 
 ._8sid .container .straiter-seat .pinesap-fohs {
-    position: relative;
+    flex: 1;
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 12px;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs .grubbily-bail {
+    display: flex;
+    align-items: center;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs .freely-floe {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: rgb(215, 239, 215);
+    padding: 5px;
+    margin-right: 10px;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs .freely-floe span:first-of-type {
+    font-size: 12px;
+    background-color: rgb(56, 142, 60);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs .freely-floe div {
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+._8sid .container .straiter-seat .pinesap-fohs .freely-floe .shogun-seme {
+    width: 210px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
 }
 
 ._8sid .container .straiter-seat .pinesap-fohs h4 {
+    width: fit-content;
     font-size: 18px;
     font-weight: 400;
+    margin-right: 5px;
 }
 
 ._8sid .container .straiter-seat .pinesap-fohs span {
-    position: absolute;
-    top: 20px;
-    right: -93px;
     font-size: 20px;
     font-weight: 600;
 }
 
-._8sid .container .straiter-seat .pinesap-fohs.zero span {
-    right: -64px;
-}
-
-._8sid .container .straiter-seat .pinesap-fohs.micro span {
-    right: -76px;
-}
-
-._8sid .container .straiter-seat .pinesap-fohs.mini span {
-    right: -87px;
-}
-
-._8sid .container .straiter-seat .pinesap-fohs.mega span {
-    right: -98px;
-}
-
-._8sid .container .straiter-seat .pinesap-fohs > img {
-    position: absolute;
-    top: 18px;
-    right: -25px;
+._8sid .container .straiter-seat .pinesap-fohs img {
     width: 18px;
 }
 
@@ -214,6 +334,88 @@
     background-color: rgb(203, 102, 203);
     padding: 10px 25px;
     cursor: pointer;
+}
+
+._8sid .container .keeling-phi {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    margin-bottom: 16px;
+}
+
+._8sid .container .keeling-phi > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: rgb(33, 33, 33);
+    user-select: none;
+}
+
+._8sid .container .keeling-phi .coopt-mat {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    bottom: -100px;
+    left: 0px;
+    background-color: white;
+    width: 170px;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 20px;
+    z-index: 1;
+    font-size: 15px;
+    border-radius: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+._8sid .container .keeling-phi .coopt-mat span {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+._8sid .container .keeling-phi .coopt-mat span:hover {
+    color: rgb(40, 116, 240);
+    cursor: pointer;
+}
+
+._8sid .container .keeling-phi > div:hover .chant-den {
+    color: rgb(40, 116, 240);
+}
+
+._8sid .container .keeling-phi > div:hover svg {
+    fill: rgb(40, 116, 240);
+}
+
+._8sid .container .keeling-phi > div svg {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+
+._8sid .container .keeling-phi .dills-feud svg {
+    transform: rotate(180deg);
+}
+
+._8sid .container .keeling-phi > div img {
+    width: 100px;
+    height: 100px;
+}
+
+._8sid .container .keeling-phi .swanlike-erg {
+    display: flex;
+    align-items: center;
+}
+
+._8sid .container .keeling-phi > div svg {
+    width: 20px;
+    height: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -235,5 +437,52 @@
         margin-left: 30px;
         width: fit-content;
         margin-bottom: 20px;
+    }
+
+    ._8sid .container .straiter-seat .filters {
+        width: auto;
+    }
+
+    ._8sid .container .straiter-seat .filters .teabag-zee {
+        width: fit-content;
+        border-radius: 20px;
+    }
+
+    ._8sid .container .straiter-seat .filters .unusual-out {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    ._8sid .container .straiter-seat .filters .grief-seas > div,
+    ._8sid .container .straiter-seat .filters .unusual-out > div {
+        display: flex;
+        gap: 20px;
+    }
+
+    ._8sid .container .keeling-phi {
+        width: 100vw;
+        max-width: 100vw;
+        overflow: scroll;
+    }
+
+    ._8sid .notification {
+        font-size: 12px;
+    }
+
+    ._8sid .container .keeling-phi > div img {
+        width: 50px;
+        height: 50px;
+    }
+
+    ._8sid .container .keeling-phi .stoup-okra {
+        display: none;
+    }
+
+    ._8sid .container .keeling-phi {
+        margin-bottom: 0px;
+    }
+
+    ._8sid .container .keeling-phi .swanlike-erg svg {
+        display: none;
     }
 }

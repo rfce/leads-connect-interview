@@ -1,11 +1,14 @@
 ._8sid .product-box {
     display: flex;
+    gap: 10px;
     margin: 0px 30px 10px 30px;
-    border-radius: 8px;
-    border: 1px solid rgb(227, 188, 255);
+    border-bottom: 1px solid rgb(227, 188, 255);
     padding: 20px;
     width: 690px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+._8sid .product-box:last-of-type {
+    border: none;
 }
 
 ._8sid .product-box .product-details h2 {
@@ -30,6 +33,10 @@
     display: flex;
     align-items: center;
     margin-top: 10px;
+    width: fit-content;
+    border-radius: 6px;
+    padding: 4px 10px 4px 4px;
+    background-color: rgb(215, 239, 215);
 }
 
 ._8sid .product-box .product-details .ratings img {
@@ -59,9 +66,8 @@
 }
 
 ._8sid .product-box .product-details .ratings > span {
-    font-size: 14px;
-    font-weight: 500;
-    color: rgb(135, 135, 135);
+    font-size: 13px;
+    color: rgb(87, 87, 87);
     margin-left: 10px;
 }
 

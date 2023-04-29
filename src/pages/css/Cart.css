@@ -1,3 +1,19 @@
+._9rch .notification {
+    position: fixed;
+    top: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+._9rch .notification .behold-sun {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
 ._9rch .navigation {
     display: flex;
     justify-content: space-between;
@@ -178,17 +194,24 @@
     display: flex;
     align-items: center;
     font-size: 14px;
-    color: grey;
+    color: rgb(203, 102, 203);
     padding-left: 30px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     cursor: pointer;
 }
 
 ._9rch .container .rankest-duet svg {
     width: 17px;
     height: 17px;
-    fill: grey;
+    fill: rgb(203, 102, 203);
+}
+
+._9rch .container .byroad-clog {
+    width: 790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -243,6 +266,18 @@
         margin-top: -20px;
         margin-bottom: 30px;
         margin-left: 30px;
+    }
+
+    ._9rch .notification {
+        font-size: 12px;
+    }
+
+    ._9rch .byroad-clog {
+        max-width: calc(100vw - 50px);
+    }
+
+    ._9rch .byroad-clog img {
+        width: 100%;
     }
 }
 

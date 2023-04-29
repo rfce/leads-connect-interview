@@ -5,7 +5,7 @@ import { MdUpdate, MdDeleteOutline } from "react-icons/md"
 import { useState, useContext, useEffect } from "react"
 import { CartContext } from "../App"
 
-const CartItem = ({ item, products }) => {
+const CartItem = ({ item, products, setNotification }) => {
     const [quantity, setQuantity] = useState(item.quantity)
 
     const product = products[item.id - 1]
@@ -55,6 +55,7 @@ const CartItem = ({ item, products }) => {
                         <button 
                             className="bilge-fox"
                             onClick={() => actions.setCart(prev => {
+                                setNotification(`${product.title} removed from cart`)
                                 return prev.filter(element => element.id !== item.id)
                             })}
                         >
