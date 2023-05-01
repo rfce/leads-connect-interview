@@ -255,9 +255,9 @@ const Dashboard = () => {
                                 return (
                                     <div key={index} className="freely-floe">
                                         <span>{item.quantity}</span>
-                                        <span className="shogun-seme">{prod.title}</span>
+                                        <span className="shogun-seme">{prod ? prod.title : undefined}</span>
                                         <div onClick={() => actions.setCart(prev => {
-                                                setNotification(`${prod.title} removed from cart`)
+                                                setNotification(`${prod ? prod.title : undefined} removed from cart`)
                                                 return prev.filter(element => element.id !== item.id)
                                             })}>
                                             <FiDelete />
